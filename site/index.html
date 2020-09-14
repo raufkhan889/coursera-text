@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coursera Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Test Page!</title>
     <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+
+        li, a, button {
+            font-family: "Montserrast", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            font-style: italic;
+            color: green;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 30px 10%;
+        }
+
+        .nav__links{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .nav__links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav__links li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav__links li a:hover {
+            color: lightgreen;
+        }
+
+        button {
+            padding: 9px;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover {
+            background-color: rgba(16, 177, 29, 0.8);
+        }
+
+        section div {
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 10%;
+            padding: 10px;
+        }
         footer div{
             text-align: center;
             margin-top: 10px;
@@ -23,8 +82,19 @@
     </style>
 </head>
 <body>
-    <h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
+    <header>
+        <ul class="nav__links">
+            <li><h1 id="heading">MY SITE</h1></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+            <li><button><a href="#">Contact</a></button></li>
+        </ul>
+    </header>
     <hr>
+    <br>
+    <h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
+    <br>
     <p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Perferendis temporibus fuga dignissimos blanditiis suscipit, quae officiis quod cupiditate aut. 
         Id vero quidem facere reprehenderit consequuntur! Mollitia doloribus facilis corrupti quas!
@@ -64,7 +134,7 @@
                 http://raufkhan.pythonanywhere.com/
             </a>
         </div>
-
     </footer>
+    <br>
 </body>
 </html>
