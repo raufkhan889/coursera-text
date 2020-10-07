@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;   
+}
+
+.head {
+    position: relative;
+    /* background-color: gray; */
+    background-color: #00693e;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+}
+
+li.head-li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+li a:hover {
+    color: white;
+}
+
+nav {
+    padding: 15px;
+}
+
+ul {
+    position: absolute;
+    right: 100px;
+    margin-right: 100px;
+    padding-top: 5px;
+}
+
+li.head-li{
+    display: inline;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+}
+
+nav button {
+    position: absolute;
+    right: 90px;
+    margin-top: 3px;
+    padding: 5px;
+    background: none;
+    border: none;
+    border: 2px solid black;
+    border-radius: 15%;
+    font-size: 15px;
+    font-style: italic;
+    background-color: #59a585;
+    font-weight: bold; 
+}
+
+footer {
+    /* background-color: gray; */
+    background-color: #00693e;
+    padding: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -0;
+    width: 100%;
+}
+
+footer div {
+    text-align: center;
+}
+
+nav div.title {
+    position: absolute;
+    font-size: 30px;
+    left: 100px;
+    font-weight: bold;
+}
+
+div.container {
+    margin: 0 100px 0 100px;
+}
+
+ol.o-list {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+ol.o-list li {
+    margin-bottom: 5px;
+}
+
+ol.o-list li a {
+    text-decoration: none;
+}
+
+ol.o-list li a:hover {
+    color: black;
+}
