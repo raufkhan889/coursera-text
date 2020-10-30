@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rauf Khan</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: url(images/cover.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            padding: 150px 50px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        div.skills {
+            padding: 50px;
+            text-align: left;
+        }
+
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .clouds img {
+            position: absolute;
+            bottom: 0;
+            max-width: 100%;
+            animation: animate calc(5s* var(--i)) linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translate(-100%);
+            }
+
+            100% {
+                transform: translate(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I'm <br> Rauf Khan </h1>
+        <div class="clouds">
+            <img src="images/cloud1.png" style="--i:1">
+            <img src="images/cloud2.png" style="--i:2">
+            <img src="images/cloud3.png" style="--i:3">
+            <img src="images/cloud4.png" style="--i:4">
+            <img src="images/cloud5.png" style="--i:5">
+        </div>
+    </header>
+
+    <section>
+        <h2>My Profile</h2>
+        <p>
+            I am a student of University of South Asia doing BSCS, semester 4th. I have proven to work independently,
+            team working and possess programming skills. Looking for position in an enterprise that can implore a
+            broadened skill set and seeking a challenging career with a progressive organization that provides an
+            opportunity to capitalize my tactical skills.
+        </p>
+    </section>
+
+    <div class="skills">
+        <h2>Skills and Key Competencies</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>Bootstrap</li>
+            <li>Python Programming</li>
+            <li>Python Django Framework</li>
+            <li>C++</li>
+            <li>Object Oriented Programming</li>
+            <li>WordPress</li>
+            <li>Adobe Photoshop</li>
+            <li>Microsoft Office (Word, PowerPoint, Excel)</li>
+            <li>Good written and verbal skills</li>
+            <li>Quick Learner</li>
+        </ul>
+    </div>
+</body>
+
+</html>
