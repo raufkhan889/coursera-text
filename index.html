@@ -4,36 +4,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RK (Sites)</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Rauf Khan</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10%;
+      align-items: center;
+      background-color: #24252A;
+    }
+
+    .title {
+      font-size: 26px;
+      color: rgb(226, 226, 226);
+      cursor: pointer;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .title:hover {
+      color: rgba(0, 136, 196, 1);
+      transition: all 0.5s ease 0s;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      width: 200%;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: rgb(226, 226, 226);
+      transition: all 0.3s ease 0s;
+    }
+
+    .nav-links li a:hover {
+      color: rgba(0, 136, 196, 1);
+    }
+
+    button {
+      background-color: rgba(0, 136, 196, 1);
+      border: none;
+      border-radius: 50px;
+      padding: 6px 15px;
+      font-size: 16px;
+      color: rgb(226, 226, 226);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgba(0, 136, 196, 0.8);
+    }
+
+    /* enf of navbar */
+
+    .container {
+      margin: 0 10%;
+      height: 80vh;
+    }
+
+    /* end of main-page-content   */
+
+    footer {
+      padding: 10px 0;
+      background-color: #24252A;
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+    }
+
+    footer ul li a {
+      text-decoration: none;
+      color: rgb(226, 226, 226);
+      transition: all 0.3s ease 0s;
+    }
+
+    footer ul li a:hover {
+      color: rgba(0, 136, 196, 0.8);
+      border-bottom: 1px solid rgba(0, 136, 196, 0.8);
+    }
+  </style>
 </head>
 
 <body>
-  <header class="head">
+  <header>
+    <div class="title">Rauf Khan</div>
     <nav>
-      <div class="title">Rauf Khan</div>
-      <ul>
-        <li class="head-li"><a href="#">Home</a></li>
-        <li class="head-li"><a href="#">Project</a></li>
-        <li class="head-li"><a href="#">About</a></li>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">About</a></li>
       </ul>
-      <button>Contact US</button>
     </nav>
+    <a href="#"><button>Conatact</button></a>
   </header>
+
   <div class="container">
-    <h1>This is main page content.</h1>
-    <ol class="o-list">
-      <li><a href="https://raufkhan889.github.io/coursera-text/site/">site</a></li>
-      <li><a href="https://raufkhan889.github.io/coursera-text/module2-solution/">module2-solution</a></li>
-      <li><a href="https://raufkhan889.github.io/coursera-text/food-site/">food-site</a></li>
-      <li><a href="https://raufkhan889.github.io/coursera-text/module3-solution/">module3-solution</a></li>
-      <li><a href="https://raufkhan889.github.io/coursera-text/learn-javascript/">learn-javascript</a></li>
-      <li><a href="https://raufkhan889.github.io/coursera-text/module4-solution/">module4-solution</a></li>
+    <h1>Main Content</h1>
+    <ol>
+      <li><a href="coursera-text/site/">site</a></li>
+      <li><a href="module2-solution/">module2-solution</a></li>
+      <li><a href="food-site/">food-site</a></li>
+      <li><a href="module3-solution/">module3-solution</a></li>
+      <li><a href="coursera-text/learn-javascript/">learn-javascript</a></li>
+      <li><a href="coursera-text/module4-solution/">module4-solution</a></li>
     </ol>
   </div>
 
   <footer>
-    <div>Copyright &copy Rauf Khan.</div>
+    <ul class="contact-links">
+      <li><a href="https://raufkhan889.github.io/coursera-text/">raufkhan889.github.io</a></li>
+      <li><a href="#">Phone: +923034192915</a></li>
+      <li><a href="#">Web Developer</a></li>
+    </ul>
   </footer>
 </body>
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Argument</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            console.log("Yey!");
+        });
+        document.getElementById('do-it').addEventListener("click", function () {
+            document.getElementById('replace').innerHTML = "Surpise Nigaa!"
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Event Argument</h1>
+    <p id="replace">this text is going to replace</p>
+    <button id="do-it">Click ME</button>
+</body>
+
+</html>
