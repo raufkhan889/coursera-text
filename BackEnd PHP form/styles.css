@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.navbar .navbar-links {
+    margin: auto;
+}
+
+.main {
+    position: relative;
+}
+h1 {
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 40px;
+}
+
+p{
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+}
+
+.main form input, textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+    border: 3px solid black;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.main form input:hover, textarea:hover {
+    width: 82%;
+}
+
+
+.main form button {
+    /* display: block; */
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 30px;
+    background-color: rgb(233, 233, 84);
+    transition: 0.3s;
+}
+
+.main form button:hover {
+    width: 25%;
+}
+.submitted {
+    color: green !important;
+}
+.errorsubmit {
+    color: red;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    margin: auto;
+}
