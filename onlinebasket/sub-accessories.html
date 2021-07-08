@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories | OnlineBasket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(221, 221, 221);
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: 50px;
+            width: 60%;
+            justify-content: space-between;
+        }
+
+        .expand-search {
+            width: 300px;
+            /* background-color: white; */
+        }
+
+        .search-bar:hover {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding-left: 25px;
+            padding-right: 25px;
+            transition: transform .2s;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+        /* end of navbar  */
+
+        /* banner */
+        .jumbotron {
+            background-image: url(./images/banner-accessories.jpg);
+            height: 410px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 0;
+        }
+
+        .banner-text {
+            width: 300px;
+        }
+
+        .display-4 {
+            color: white;
+            font-size: 40px;
+            font-family: times new roman;
+        }
+
+        .lead {
+            color: white;
+            font-size: 17px;
+            font-weight: 500px;
+
+        }
+
+        .btn {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            /* padding-right: 6px 25px; */
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .think_sale_div {
+            background-color: white;
+            float: left;
+            width: 1130px;
+            height: 400px;
+            font-family: verdana;
+        }
+
+        .img_div {
+            float: left;
+        }
+
+        .think_sale_img {
+            width: 600px;
+            height: 342px;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+
+        .text_div {
+            float: left;
+            margin-left: 40px;
+            margin-top: 30px;
+            width: 400px;
+            height: 340px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(153, 160, 217);
+        }
+
+        .text_qoute {
+            padding-top: 25px;
+        }
+
+        .text_char {
+            height: 18px;
+        }
+
+        /* big Sales Offers */
+        .full-row-container {
+            margin-top: -31px;
+            padding-top: 15px;
+        }
+
+        #offers-title {
+            text-align: center;
+            color: gray;
+        }
+
+        #post-offer,
+        .container-fluid {
+            background-color: white;
+        }
+
+        .offer img {
+            width: 291px;
+            padding: 10px 0px 10px;
+            width: 240px;
+            height: 300px;
+            margin-left: 40px;
+            border-radius: 50%;
+        }
+
+        .offer p {
+            color: rgb(61, 60, 60);
+            text-align: center;
+            font-weight: 440;
+        }
+
+        /* start of grid posts  */
+        #acc-title,
+        #homeApp-title {
+            /*text-align: center;*/
+            font-size: 36px;
+            word-break: break-all;
+        }
+
+        #grid {
+            background-color: white;
+            margin: 8px;
+            padding-bottom: 10px;
+        }
+
+        .grid-post img {
+            width: 239px;
+            padding: 10px 0px;
+        }
+
+        .grid-post .title {
+            font-weight: bold;
+        }
+
+        .grid-post .text {
+            height: 2em;
+        }
+
+        /* start of footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            color: rgb(216, 210, 198);
+            background-color: #007bff;
+        }
+
+        footer .inner-footer {
+            padding: 25px;
+        }
+
+        a.footer-logo {
+            color: wheat;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.8s;
+            border-bottom: none;
+        }
+
+        .footer-logo:hover {
+            color: rgb(138, 138, 138);
+        }
+
+        .paragraph {
+            margin-top: 15px;
+            color: burlywood;
+            font-size: 14px;
+        }
+
+        .social-links {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .pages {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .contacts {
+            text-align: left;
+            padding-left: 20%;
+        }
+
+        .footer-lead {
+            font-weight: 400;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            display: inline;
+        }
+
+        a.block-item {
+            color: burlywood;
+            display: block;
+            font-weight: 200;
+            margin-top: 8px;
+            transition: 0.25s;
+            text-decoration: none;
+        }
+
+        a.block-item:hover {
+            color: rgb(128, 160, 161);
+        }
+
+        i {
+            margin-right: 7px;
+        }
+
+        /* end of grid post  */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid" style="background: none;">
+            <a class="navbar-brand" href="home.html">OnlineBasket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="sub-fashion.html" class="dropdown-item">Fashion</a></li>
+                            <li><a href="sub-bakery-products.html" class="dropdown-item">Bakery Products</a></li>
+                            <li><a href="sub-home-accessories.html" class="dropdown-item">Home Accessories</a></li>
+                            <li><a href="sub-electronic-appliances.html" class="dropdown-item">Electronic Appliances</a>
+                            </li>
+                            <li><a href="sub-accessories.html" class="dropdown-item">Accessories</a></li>
+                            <li><a href="sub-toys-&-gifts.html" class="dropdown-item">Toys & Gifts</a></li>
+                            <li><a href="sub-&-others.html" class="dropdown-item">& Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-search" aria-hidden="true"></i></a>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right expand-search" aria-labelledby="navbarDropdown">
+                            <li><a class="search-bar" href="#">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="login.html"><button class="btn btn-light">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+
+    <div class="jumbotron">
+        <div class="banner-text">
+            <h1 class="display-4">Confidence is the greatest accessory. </h1>
+            <p class="lead">“Whoever said that money can't buy happiness simply didn't know where to go shopping.”</p>
+            <button class="btn btn-dark"><a href="#">Shop Now</a></button>
+        </div>
+    </div>
+    <!-- end of banner -->
+
+
+    <div class="container-fluid full-row-container">
+        <h3 id="offers-title">Discount Offers</h3>
+        <div class="row">
+            <div class="col-md shadow" id="post-offer">
+                <div class="offer">
+                    <img src="./images/accessory-page-1.jpg" alt="">
+                    <p class="lead">Makeup</p>
+                </div>
+            </div>
+            <div class="col-md shadow" id="post-offer">
+                <div class="offer">
+                    <img src="./images/accessory-page-2.jpg" alt="">
+                    <p class="lead">Jackets</p>
+                </div>
+            </div>
+            <div class="col-md shadow" id="post-offer">
+                <div class="offer">
+                    <img src="./images/accessory-page-3.jpg" alt="">
+                    <p class="lead">Ties</p>
+                </div>
+            </div>
+            <div class="col-md shadow" id="post-offer">
+                <div class="offer">
+                    <img src="./images/accessory-page-4.jpg" alt="">
+                    <p class="lead">Mobile accessories</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of offers  -->
+    </br>
+
+    <div class="container">
+        <h3 id="acc-title"> ThinkSale </h3>
+        <div class="row">
+            <div class="think_sale_div">
+                <div class="img_div">
+                    <img src="./images/Single-accessory.jpg" alt="" class="think_sale_img">
+                </div>
+                <div class="text_div">
+                    <div class="text_qoute"><b>Linovo sale upto 50% </b>
+                        </br>Technology is a useful servent but a dangerous master. </div>
+                    <p> <b>ThinkPad X1 Carbon Gen 7 </b></p>
+                    <div class="text_char"> 7th Gen ThinkPad-X1 Carbon packs 14inch </div>
+                    <div class="text_char"> 1080p IPS </div>
+                    <div class="text_char"> LCD,1.8GHz </div>
+                    <div class="text_char"> Core i7-8565U CPU, </div>
+                    <div class="text_char"> 16GB of RAM, </div>
+                    <div class="text_char"> and a 256GB SSD. </div>
+                    <p class="text">WAS $2,629 | NOW $1,577</p>
+                    <button class="btn btn-dark">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of sale offer  -->
+    </br>
+
+
+    <div class="container">
+        <h3 id="acc-title"> Fashion Accessories</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Fashion-accessory-1.jpg" alt="">
+                    <div class="title">Lips Canvas Cosmetic Bag</div>
+                    <p class="text">If you can't stop thinking about, buy it.</p>
+                    <p class="text">$12.95USD</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Fashion-accessory-2.jpg" alt="">
+                    <div class="title">Lorain Buffalo Plaid Beanie</div>
+                    <p class="text">A woman without Scarf is a woman without Future.</p>
+                    <p class="text">$19.95USD</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Fashion-accessory-3.jpg" alt="">
+                    <div class="title">Esme Stripped Blanket Scarf</div>
+                    <p class="text">Accessories are like vitamins to Fashion.</p>
+                    <p class="text">$24.95USD</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Fashion-accessory-4.jpg" alt="">
+                    <div class="title">Happy Diamond Hair Clip</div>
+                    <p class="text">Girls just wanna have fun? No jewellery.</p>
+                    <p class="text">$5.00USD</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of fashion accessories post  -->
+    </br>
+
+    <div class="container">
+        <h3 id="acc-title"> Mobile Accessories</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Mobile-accessory-1.jpg" alt="">
+                    <div class="title">Apple 60W MagSafe 2 Power Adapter(13-inch display)</div>
+                    <p class="text">Available in white, red & black.</p>
+                    <p class="text">R14,499</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Mobile-accessory-2.jpg" alt="">
+                    <div class="title">Apple iPhone12 Pro Max cloud Super Soft Case</div>
+                    <p class="text">Available in white, red & black.</p>
+                    <p class="text">Rs14,900</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Mobile-accessory-3.jpg" alt="">
+                    <div class="title"> Apple Magic Mouse 2 MRME2 - Silver</div>
+                    <p class="text">Available in white, red & black.</p>
+                    <p class="text">Rs2,791</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/Mobile-accessory-4.jpg" alt="">
+                    <div class="title">Black APPLE AIRPODS GENERATION 2</div>
+                    <p class="text">Available in white, red & black.</p>
+                    <p class="text">Rs3,250</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of accessories post  -->
+    </br>
+
+    <div class="container">
+        <h3 id="acc-title"> Makeup Accessories</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/makeup-accessory-1.jpg" alt="">
+                    <div class="title">COCO Ladies fragrance </div>
+                    <p class="text">Perfumes are key to our memories.</p>
+                    <p class="text">R14,999</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/makeup-accessory-2.jpg" alt="">
+                    <div class="title">Lancôme Liquid Highlighter </div>
+                    <p class="text">May your day be as Bright as your highlighter.</p>
+                    <p class="text">Rs999</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/makeup-accessory-3.jpg" alt="">
+                    <div class="title">Bestop 8-pieces brush set.</div>
+                    <p class="text">With a good makeup brush, every woman can be artist.</p>
+                    <p class="text">Rs1,199</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/makeup-accessory-4.jpg" alt="">
+                    <div class="title">6 shades mate Glose set</div>
+                    <p class="text">Lipstick can't solve problems, but its a pretty good start.</p>
+                    <p class="text">Rs990</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of accessories post  -->
+
+
+
+
+    <footer>
+        <div class="inner-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="home.html" class="footer-logo">OnlineBasket</a>
+                        <div class="lead paragraph">
+                            "Shops are necessary places, where people go to buy their necessary things. Shopping is
+                            something which is loved by all of us. It is said that many people find shopping relaxing."
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="social-links">
+                            <div class="lead footer-lead">Social Links</div>
+                            <a href="" class="block-item">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="pages">
+                            <div class="lead footer-lead">Pages</div>
+                            <a href="home.html" class="block-item">Home</a>
+                            <a href="#" title="Choose From Top Menu" class="block-item">Category</a>
+                            <a href="sales.html" class="block-item">Sales</a>
+                            <a href="about.html" class="block-item">About</a>
+                            <a href="contact.html" class="block-item">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="contacts">
+                            <div class="lead footer-lead">Contacts</div>
+                            <a href="" class="block-item">Phone: <br>
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> +92303-4192915
+                            </a>
+                            <a href="" class="block-item">Email: <br>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>online.basket@gmail.com
+                            </a>
+                            <a href="" class="block-item">Website: <br>
+                                <i class="fa fa-globe" aria-hidden="true"></i>www.onlinebasket.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

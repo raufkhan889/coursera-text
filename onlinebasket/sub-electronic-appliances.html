@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic | OnlineBasket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(221, 221, 221);
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: 50px;
+            width: 60%;
+            justify-content: space-between;
+        }
+
+        .expand-search {
+            width: 300px;
+            /* background-color: white; */
+        }
+
+        .search-bar:hover {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding-left: 25px;
+            padding-right: 25px;
+            transition: transform .2s;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+
+        /* end of navbar  */
+
+        /* banner */
+        .jumbotron {
+            background-image: url(./images/electronics24-banner.jpg);
+            height: 420px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        .banner-text {
+            width: 600px;
+            margin-top: 80px;
+            margin-left: 700px;
+        }
+
+        .display-4 {
+            color: white;
+            font-family: 'Segoe UI';
+            font-size: 40px;
+
+        }
+
+        .span-4 {
+            float: left;
+            color: red;
+            margin-left: 20px;
+        }
+
+
+        /* big Sales Offers */
+        .full-row-container {
+            margin-top: -33px;
+            padding-top: 0px;
+            overflow: hidden;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        #offers-title {
+            text-align: center;
+            color: black;
+        }
+
+        #post-offer,
+        .container-fluid {
+            background-color: orangered;
+        }
+
+        .offer img {
+            width: 400px;
+            padding: 0px 0px 10px;
+            height: 250px;
+            margin-left: 80px;
+        }
+
+        .offer p {
+            color: rgb(61, 60, 60);
+            text-align: center;
+            font-weight: 400;
+        }
+
+        /* electronic posts  */
+        #electronic-title {
+            margin: 13px 0px 5px;
+            text-align: center;
+
+        }
+
+        #electronic {
+            margin: 10px;
+            background-color: white;
+            padding-bottom: 10px;
+        }
+
+        .col-md .shopping-post img {
+            width: 330px;
+            padding: 10px 0;
+        }
+
+        .shopping-post .title {
+            font-weight: bold;
+        }
+
+        .shopping-post .text {
+            height: 3em;
+        }
+
+        /* end of electronic posts  */
+
+        /* start of grid posts  */
+        #acc-title,
+        #homeApp-title {
+            text-align: center;
+        }
+
+        #grid {
+            background-color: white;
+            margin: 8px;
+            padding-bottom: 10px;
+        }
+
+        .grid-post img {
+            width: 239px;
+            padding: 10px 0px;
+        }
+
+        .grid-post .title {
+            font-weight: bold;
+        }
+
+        .grid-post .text {
+            height: 2em;
+        }
+
+        /* end of grid post  */
+
+        /* start of footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            color: rgb(216, 210, 198);
+            background-color: #007bff;
+        }
+
+        footer .inner-footer {
+            padding: 25px;
+        }
+
+        a.footer-logo {
+            color: wheat;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.8s;
+            border-bottom: none;
+        }
+
+        .footer-logo:hover {
+            color: rgb(138, 138, 138);
+        }
+
+        .paragraph {
+            margin-top: 15px;
+            color: burlywood;
+            font-size: 14px;
+        }
+
+        .social-links {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .pages {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .contacts {
+            text-align: left;
+            padding-left: 20%;
+        }
+
+        .footer-lead {
+            font-weight: 400;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            display: inline;
+        }
+
+        a.block-item {
+            color: burlywood;
+            display: block;
+            font-weight: 200;
+            margin-top: 8px;
+            transition: 0.25s;
+            text-decoration: none;
+        }
+
+        a.block-item:hover {
+            color: rgb(128, 160, 161);
+        }
+
+        i {
+            margin-right: 7px;
+        }
+
+        .div-1 {
+            text-align: center;
+        }
+
+
+        .div-2 {
+            width: 1190px;
+            height: 350px;
+            background-color: white;
+            margin-left: 80px;
+        }
+
+        .div-3 {
+            width: 168px;
+            height: 250px;
+            margin-left: 25px;
+            float: left;
+            padding-left: 10px;
+        }
+
+        .div-6 {
+            width: 100%;
+            /* margin-left: 170px; */
+        }
+
+        .div-6 img {
+            width: 100%;
+        }
+
+
+        .style1 {
+            width: 150px;
+            height: 180px;
+        }
+
+        .text2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid" style="background: none;">
+            <a class="navbar-brand" href="home.html">OnlineBasket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="sub-fashion.html" class="dropdown-item">Fashion</a></li>
+                            <li><a href="sub-bakery-products.html" class="dropdown-item">Bakery Products</a></li>
+                            <li><a href="sub-home-accessories.html" class="dropdown-item">Home Accessories</a></li>
+                            <li><a href="sub-electronic-appliances.html" class="dropdown-item">Electronic Appliances</a>
+                            </li>
+                            <li><a href="sub-accessories.html" class="dropdown-item">Accessories</a></li>
+                            <li><a href="sub-toys-&-gifts.html" class="dropdown-item">Toys & Gifts</a></li>
+                            <li><a href="sub-&-others.html" class="dropdown-item">& Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-search" aria-hidden="true"></i></a>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right expand-search" aria-labelledby="navbarDropdown">
+                            <li><a class="search-bar" href="#">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="login.html"><button class="btn btn-light">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+    <div class="jumbotron">
+        <div class="banner-text">
+            <b class="display-4">THE BEST HOME APPLIANCES ON ONLINE BASKET </b> <br />
+            <button class="btn btn-light"><a href="#">Shop Now</a></button>
+        </div>
+    </div>
+    <!-- end of banner -->
+
+    <div class="container-fluid full-row-container">
+
+        <div class="div-6">
+            <img src="./images/electronic23 banner.jpg" />
+
+        </div>
+    </div> <br />
+
+
+    <!-- end of   -->
+    <!--Start of TV & LEDs  -->
+    <div class="container">
+        <h3 id="electronic-title"> TV & LED </h3>
+        <div class="row">
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/elecronic1-LED1.jpg" alt="">
+                    <div class="title">TCL D3000 40" Full HD LED TV - Black</div>
+                    <span class="text">Android Build in Neflix and Youtube </span> <br />
+                    <b class="text2"> Price $500 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/elecronic2-LED2.jpg" alt="">
+                    <div class="title">Hisense 43E5 43" Full HD LED TV - Black</div>
+                    <span class="text"> Smart TV with LInix Operating system</span> <br />
+                    <b class="text2"> Price $590 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/elecronic3-LED3.jpg" alt="">
+                    <div class="title">Orient O900 40" Full HD LED TV - Black</div>
+                    <span class="text"> 4k with Android Smart AI</span> <br />
+                    <b class="text2"> Price $610 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of TV & LEDs -->
+    <!-- start of Air Conditioners  -->
+
+    <div class="container">
+        <h3 id="acc-title">Air Conditioners</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic4-ac1.jpg" alt="">
+                    <div class="title">Changhong Ruba - Heat & Cool - 1.5 Ton Invertor </div>
+                    <span class="text">Works up to 50° C - Low voltage start</span><br />
+                    <b class="text2"> Price $1050 </b> <br /> <br />
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic5-ac2.jpg" alt="">
+                    <div class="title"> Kenwood - Heat & Cool - 1.5 Ton Invertor</div>
+                    <span class="text">Energy saving up to 70% - Turbo cooling and heating</span><br />
+                    <b class="text2"> Price $950 </b> <br /> <br />
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic6-ac3.jpg" alt="">
+                    <div class="title"> Gree - Heat & Cool - 1.5 Ton Invertor</div>
+                    <span class="text">Applicable Room Size: 120-160 sq - for use in all seasons</span> <br />
+                    <b class="text2"> Price $990 </b> <br /> <br />
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic7-ac4.jpg" alt="">
+                    <div class="title">Orient - Heat & Cool - 2.5 Ton Invertor</div>
+                    <span class="text">Golden fins evaporator & condenser - 100% full copper</span> <br />
+                    <b class="text2"> Price $1200 </b> <br /> <br />
+                    <button class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Air Conditioners  -->
+
+    <!-- Philips Hair dryers -->
+
+    <div class="container">
+        <h3 id="homeApp-title">Philips Hair dryers</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic8-hairdryer1.jpg" alt="">
+                    <div class="title"> Philips Hair Dryer 1200Watts-Pink</div>
+                    <b class="text2"> Price $45 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic9-hairdryer2.jpg" alt="">
+                    <div class="title">Philips Hair Dryer 1200Watts-Black</div>
+                    <b class="text2"> Price $44 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic10-hairdryer3.jpg" alt="">
+                    <div class="title"> Philips DryCare Essential Energy Efficient Hairdryer</div>
+                    <b class="text2"> Price $55 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic11-hairdryer4.jpg" alt="">
+                    <div class="title"> Philips Smart Care Hair Dryer BHC208 wind heat anion</div>
+                    <b class="text2"> Price $51 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Philips Hair dryers  -->
+    <!-- Start of Microwave Oven -->
+
+    <div class="container">
+        <h3 id="homeApp-title">Microwave Oven</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic12-microwave1.jpg" alt="">
+                    <div class="title"> Westpoint Microwave Oven With Grill 40Ltr (WF-841)</div>
+                    <b class="text2"> Price $150 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic13-microwave2.jpg" alt="">
+                    <div class="title">Westpoint Microwave Oven 44Ltr (WF-853)</div>
+                    <b class="text2"> Price $140 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic14-microwave3.jpg" alt="">
+                    <div class="title">Westpoint Microwave Oven 20Ltr (WF-822)</div>
+                    <b class="text2"> Price $130 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic15-microwave4.jpg" alt="">
+                    <div class="title">Westpoint Microwave Oven 20Ltr (WF-824) </div>
+                    <b class="text2"> Price $129 </b> <br /> <br />
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of Microwave Oven -->
+    <!-- Start of Washing Machine -->
+
+
+    <div class="container">
+        <h3 id="homeApp-title">Washing Machine</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic16-Washing Machine1.jpg" alt="">
+                    <div class="title"> Haier Top Load Fully Automatic Washing Machine 15KG </div>
+                    <b class="text2"> Price $450</b> <br /> <br />
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic17-Washing Machine2.jpg" alt="">
+                    <div class="title"> Haier 15 kg/1708 Series/Fully Automatic/Top Load/HWM </div>
+                    <b class="text2"> Price $500 </b> <br /> <br />
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic18-Washing Machine3.jpg" alt="">
+                    <div class="title"> Haier HWM70-Top Load Fully Automatic Washing Machine</div>
+                    <b class="text2"> Price $480 </b> <br /> <br />
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/electronic19-Washing Machine4.jpg" alt="">
+                    <div class="title">Haier 9KG Automatic Washing Machine 90-1789 - Silver</div>
+                    <b class="text2"> Price $424 </b> <br /> <br />
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Washing Machine  -->
+
+    <!-- start of Sale on  Refrigerator -->
+
+    <div class="container">
+        <h3 id="electronic-title"> Refrigerator </h3>
+        <div class="row">
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/electronic20-Refrigerator1.jpg" alt="">
+                    <div class="title"> Haier HRF-398EPB-E-star-Haier </div>
+                    <b class="text2"> Sale Price $350 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW </button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/electronic21-Refrigerator2.jpg" alt="">
+                    <div class="title">Haier HRF-398EPR-E-star-Haier </div>
+                    <b class="text2"> Sale Price $340 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW </button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="electronic">
+                <div class="shopping-post">
+                    <img src="./images/electronic22-Refrigerator3.png" alt="">
+                    <div class="title">Haier Side by Side Refrigerator</div>
+                    <b class="text2"> Sale Price $1500 </b> <br /> <br />
+                    <button class="btn btn-primary">SHOW NOW </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of Sale on  Refrigerator  -->
+
+    <!-- start of footer  -->
+
+
+    <footer>
+        <div class="inner-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="home.html" class="footer-logo">OnlineBasket</a>
+                        <div class="lead paragraph">
+                            "Shops are necessary places, where people go to buy their necessary things. Shopping is
+                            something which is loved by all of us. It is said that many people find shopping relaxing."
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="social-links">
+                            <div class="lead footer-lead">Social Links</div>
+                            <a href="" class="block-item">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="pages">
+                            <div class="lead footer-lead">Pages</div>
+                            <a href="home.html" class="block-item">Home</a>
+                            <a href="#" title="Choose From Top Menu" class="block-item">Category</a>
+                            <a href="sales.html" class="block-item">Sales</a>
+                            <a href="about.html" class="block-item">About</a>
+                            <a href="contact.html" class="block-item">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="contacts">
+                            <div class="lead footer-lead">Contacts</div>
+                            <a href="" class="block-item">Phone: <br>
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> +92303-4192915
+                            </a>
+                            <a href="" class="block-item">Email: <br>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>online.basket@gmail.com
+                            </a>
+                            <a href="" class="block-item">Website: <br>
+                                <i class="fa fa-globe" aria-hidden="true"></i>www.onlinebasket.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

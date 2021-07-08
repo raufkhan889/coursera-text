@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .count-up {
+            background: url(./images/count-up-banner.jpg) no-repeat;
+            background-position: top;
+            background-size: cover;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .count-up .row {
+            background-color: rgba(0, 0, 0, 0.589);
+            width: 102.3%;
+            height: 100%;
+            align-items: center;
+        }
+
+        #box-counter {
+            color: rgb(231, 231, 231);
+            /* background-color: pink; */
+            margin: auto 30px;
+            padding: 30px;
+            border: 1px dotted rgb(231, 231, 231);
+            border-radius: 10px;
+        }
+
+        #box-counter i {
+            font-size: 70px;
+        }
+
+        #box-counter .counter {
+            font-size: 50px;
+        }
+
+        #box-counter .title {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">RaufKhan</a>
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Project</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of navbar -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/banner-accessories.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner-contact.gif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <!-- end of slides -->
+
+    <div class="container-fluid count-up">
+        <div class="row">
+            <div class="col-md text-center" id="box-counter">
+                <div><i class="fa fa-history"></i></div>
+                <div class="counter">756</div>
+                <div class="title">Working Hours</div>
+            </div>
+            <div class="col-md text-center" id="box-counter">
+                <div><i class="fa fa-gift"></i></div>
+                <div class="counter">508</div>
+                <div class="title">Successful Delivery</div>
+            </div>
+            <div class="col-md text-center" id="box-counter">
+                <div><i class="fa fa-users"></i></div>
+                <div class="counter">408</div>
+                <div class="title">Happy Client</div>
+            </div>
+            <div class="col-md text-center" id="box-counter">
+                <div><i class="fa fa-trophy"></i></div>
+                <div class="counter">102</div>
+                <div class="title">Awards Recieved</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1200
+            });
+        });
+    </script>
+</body>
+
+</html>

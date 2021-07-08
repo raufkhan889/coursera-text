@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales | OnlineBasket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Start of navbar */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(221, 221, 221);
+        }
+
+
+        .navbar-brand {
+            font-size: 28px;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: 50px;
+            width: 60%;
+            justify-content: space-between;
+        }
+
+        .expand-search {
+            width: 300px;
+            /* background-color: white; */
+        }
+
+        .search-bar:hover {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding-left: 25px;
+            padding-right: 25px;
+            transition: transform .2s;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+        /* End of navbar */
+
+        /* Start New year banner */
+        .jumbotron {
+            background-image: url(./images/sale-banner1.jpg);
+            height: 480px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 0;
+        }
+
+        .banner-text {
+            width: 500px;
+        }
+
+        .display-4 {
+            color: rgb(197, 179, 88);
+            font-family: arial black;
+            font-size: 55px;
+
+        }
+
+        .text-1 {
+            font-family: timesnewroman;
+            font-size: 30px;
+            color: grey;
+        }
+
+
+        .lead {
+            color: white;
+            font-size: 17px;
+        }
+
+        /* End of Newyear banner */
+
+        /* big Sales Offers */
+        .full-row-container {
+            margin-top: -31px;
+            padding-top: 15px;
+        }
+
+        #offers-title {
+            text-align: center;
+            color: rgba(107, 30, 30, 0.877);
+        }
+
+        #post-offer,
+        .container-fluid {
+            background-color: white;
+        }
+
+        .offer img {
+            width: 291px;
+            padding: 0px 0px 10px;
+            border-radius: 5px;
+            height: 250px;
+        }
+
+        .offer p {
+            color: rgb(61, 60, 60);
+            text-align: center;
+            font-weight: 400;
+        }
+
+        /* End big sales */
+
+        /* Men & Women sales  */
+        #Winter-Sale-title {
+            margin: 13px 0px 5px;
+            text-align: center;
+
+        }
+
+        #Winter-Sale {
+            margin: 10px;
+            background-color: white;
+            padding-bottom: 10px;
+        }
+
+        .col-md .shopping-post img {
+            width: 330px;
+            padding: 10px 0;
+        }
+
+        .shopping-post .title {
+            font-weight: bold;
+        }
+
+        .shopping-post .text {
+            height: 3em;
+        }
+
+        .text-2 {
+            color: darkorange;
+            font-family: calibri;
+            font-size: 20px;
+        }
+
+        /* end of Men & Women sales  */
+
+        /* Start of 70% sale banner */
+        #Sale-banner2-title {
+            margin: 13px 0px 5px;
+            text-align: center;
+
+        }
+
+        #Special-sale {
+            margin: 10px;
+        }
+
+        .Special-sale-post img {
+            width: 1090px;
+            height: 300px;
+        }
+
+        /* end of 70% sale banner */
+
+        /* start of grid posts  */
+        #Kids-title,
+        #Shoes-title {
+            text-align: center;
+        }
+
+        #grid {
+            background-color: white;
+            margin: 8px;
+            padding-bottom: 10px;
+        }
+
+        .grid-post img {
+            width: 239px;
+            padding: 10px 0px;
+        }
+
+        .grid-post .title {
+            font-weight: bold;
+        }
+
+        .grid-post .text {
+            height: 2em;
+        }
+
+        /* end of grid post  */
+
+        /* start of footer */
+        footer {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            color: rgb(216, 210, 198);
+            background-color: #007bff;
+        }
+
+        footer .inner-footer {
+            padding: 25px;
+        }
+
+        a.footer-logo {
+            color: wheat;
+            font-size: 30px;
+            text-decoration: none;
+            transition: 0.8s;
+            border-bottom: none;
+        }
+
+        .footer-logo:hover {
+            color: rgb(138, 138, 138);
+        }
+
+        .paragraph {
+            margin-top: 15px;
+            color: burlywood;
+            font-size: 14px;
+        }
+
+        .social-links {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .pages {
+            text-align: left;
+            padding-left: 39%;
+        }
+
+        .contacts {
+            text-align: left;
+            padding-left: 20%;
+        }
+
+        .footer-lead {
+            font-weight: 400;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            display: inline;
+        }
+
+        a.block-item {
+            color: burlywood;
+            display: block;
+            font-weight: 200;
+            margin-top: 8px;
+            transition: 0.25s;
+            text-decoration: none;
+        }
+
+        a.block-item:hover {
+            color: rgb(128, 160, 161);
+        }
+
+        i {
+            margin-right: 7px;
+        }
+
+        /* sales classes */
+        .sale-s1 {
+            color: rgb(223, 74, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid" style="background: none;">
+            <a class="navbar-brand" href="home.html">OnlineBasket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="sub-fashion.html" class="dropdown-item">Fashion</a></li>
+                            <li><a href="sub-bakery-products.html" class="dropdown-item">Bakery Products</a></li>
+                            <li><a href="sub-home-accessories.html" class="dropdown-item">Home Accessories</a></li>
+                            <li><a href="sub-electronic-appliances.html" class="dropdown-item">Electronic Appliances</a>
+                            </li>
+                            <li><a href="sub-accessories.html" class="dropdown-item">Accessories</a></li>
+                            <li><a href="sub-toys-&-gifts.html" class="dropdown-item">Toys & Gifts</a></li>
+                            <li><a href="sub-&-others.html" class="dropdown-item">& Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="sales.html">Sales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-search" aria-hidden="true"></i></a>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right expand-search" aria-labelledby="navbarDropdown">
+                            <li><a class="search-bar" href="#">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                                    </form>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="login.html"><button class="btn btn-light">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navbar  -->
+
+    <!-- Start New Bannner -->
+    <div class="jumbotron">
+        <div class="banner-text">
+            <span class="display-4 toggle-text"> SALE...! SALE...! SALE...! SALE...! </span> <br />
+            <span class="text-1"> Grand Sale On the Special Occasion Of The Happy New Year 2021. </span>
+            <br /> <br />
+            <p class="lead">"OnlineBasket is offering you a grand sale on all of their products at the end of the."</p>
+            <button class="btn btn-light"><a href="#">Shop Now</a></button>
+        </div>
+    </div>
+    <!-- End of New Yewar banner -->
+
+    <!-- Start of big sales -->
+    <div class="container-fluid full-row-container">
+        <h3 id="offers-title">New Year Sales</h3>
+        <div class="row">
+            <div class="col-md" id="post-offer">
+                <div class="offer">
+                    <img src="./images/New_sale1.jpg" alt="">
+                    <p class="lead">Big Sales On All Our Products</p>
+                </div>
+            </div>
+            <div class="col-md" id="post-offer">
+                <div class="offer">
+                    <img src="./images/New_sale2.jpg" alt="">
+                    <p class="lead">Special Discount On Gold Dinner Set</p>
+                </div>
+            </div>
+            <div class="col-md" id="post-offer">
+                <div class="offer">
+                    <img src="./images/New_sale3.jpg" alt="">
+                    <p class="lead">60% Off On All Kids School Bags</p>
+                </div>
+            </div>
+            <div class="col-md" id="post-offer">
+                <div class="offer">
+                    <img src="./images/New_sale4.jpg" alt="">
+                    <p class="lead">Grand Sale On The Toys</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Big offers  -->
+
+    <!-- For Women sales -->
+    <div class="container">
+        <h3 id="Winter-Sale-title">Winter Sale For Women</h3>
+        <div class="row">
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-women-1.jpg" alt="">
+                    <div class="title">Slim Blue Beige Fashion Coat For Ladies</div>
+                    <p class="text-2">Price Only PKR500</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-women-2.webp" alt="">
+                    <div class="title">Women Dark Blue Trench Fashion Coat </div>
+                    <p class="text-2">Price Only PKR450</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-women-3.jpg" alt="">
+                    <div class="title">Girls Red Long Coat With Soft Shell</div>
+                    <p class="text-2">Price Only PKR300</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Women sales  -->
+
+    <!-- For Men sales -->
+    <div class="container">
+        <h3 id="Winter-Sale-title">Winter Sale For Men</h3>
+        <div class="row">
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-men-1.jpg" alt="">
+                    <div class="title">Soft Yellow Hoddie For Boys</div>
+                    <p class="text-2">Price Only PKR350</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-men-2.jpg" alt="">
+                    <div class="title">Stylish White Cotton Coat + Hoddie </div>
+                    <p class="text-2">Price Only PKR550</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="Winter-Sale">
+                <div class="shopping-post">
+                    <img src="./images/sale-men-3.jpg" alt="">
+                    <div class="title">A Pure Leather Black Jacket For Men</div>
+                    <p class="text-2">Price Only PKR400</p>
+                    <button class="btn btn-primary">SHOW NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Men sales  -->
+
+    <!-- Start of 70% sale Banner -->
+    <div class="container">
+        <h3 id="Sale-banner2-title"> Grand Sales for Kids</h3>
+        <div class="row shadow" id="Special-sale">
+            <div class="Special-sale-post">
+                <img src="./images/sale-banner3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end of 70% sale Banner -->
+
+    <!-- Start the kid Cloth sales -->
+    <div class="container">
+        <h3 id="Kids-title">Kids Wear</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kids-1.jpg" alt="">
+                    <div class="title">Girls sequin sweater</div>
+                    <p class="text">Girls sequin sweater size 5-6.</p>
+                    <p class="text-2">Price Only PKR400</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kids-2.jpg" alt="">
+                    <div class="title">Girls fuzzy black sweater</div>
+                    <p class="text">Made With soft silk and wool.</p>
+                    <p class="text-2">Price Only PKR300</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kids-3.jpg" alt="">
+                    <div class="title">Baby winter sweater</div>
+                    <p class="text">Soft and comfortable fabric.</p>
+                    <p class="text-2">Price Only PKR350</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kids-4.jpg" alt="">
+                    <div class="title">Toddler boy sweater</div>
+                    <p class="text">Avaliable in 5 different colors.</p>
+                    <p class="text-2">Price Only PKR250</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of kids cloths sale -->
+
+    <!-- Start the kids shoes sales -->
+    <div class="container">
+        <h3 id="Shoes-title">Kids Shoes</h3>
+        <div class="row">
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kid-shoes-1.jpeg" alt="">
+                    <div class="title">Black "Camo" Shoe</div>
+                    <p class="text">Comfortable shoes wear.</p>
+                    <p class="text-2">Price Only PKR500</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kid-shoes-2.jpeg" alt="">
+                    <div class="title">Fox Slippers Dress Shoes</div>
+                    <p class="text">Decent dress shoes for baby girls.</p>
+                    <p class="text-2">Price Only PKR300</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kid-shoes-3.jpg" alt="">
+                    <div class="title">Nike Jordans~ Kids Shoes</div>
+                    <p class="text">Soft shoes for new born babies.</p>
+                    <p class="text-2">Price Only PKR200</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+            <div class="col-md shadow" id="grid">
+                <div class="grid-post">
+                    <img src="./images/sale-kid-shoes-4.jpg" alt="">
+                    <div class="title">French Toast Dress Shoes</div>
+                    <p class="text">Black dress shoes for boys.</p>
+                    <p class="text-2">Price Only PKR450</p>
+                    <button class="btn btn-primary">ADD Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of kids shoes sale -->
+
+    <!-- Start the footer -->
+    <footer>
+        <div class="inner-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="home.html" class="footer-logo">OnlineBasket</a>
+                        <div class="lead paragraph">
+                            "Shops are necessary places, where people go to buy their necessary things. Shopping is
+                            something which is loved by all of us. It is said that many people find shopping relaxing."
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="social-links">
+                            <div class="lead footer-lead">Social Links</div>
+                            <a href="" class="block-item">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
+                            </a>
+                            <a href="" class="block-item">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="pages">
+                            <div class="lead footer-lead">Pages</div>
+                            <a href="home.html" class="block-item">Home</a>
+                            <a href="#" title="Choose From Top Menu" class="block-item">Category</a>
+                            <a href="sales.html" class="block-item">Sales</a>
+                            <a href="about.html" class="block-item">About</a>
+                            <a href="contact.html" class="block-item">Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="contacts">
+                            <div class="lead footer-lead">Contacts</div>
+                            <a href="" class="block-item">Phone: <br>
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> +92303-4192915
+                            </a>
+                            <a href="" class="block-item">Email: <br>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>online.basket@gmail.com
+                            </a>
+                            <a href="" class="block-item">Website: <br>
+                                <i class="fa fa-globe" aria-hidden="true"></i>www.onlinebasket.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        setInterval(function () {
+            $('.toggle-text').toggleClass('sale-s1');
+        }, 500);
+    </script>
+</body>
+
+</html>
